@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Telephone Directory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Telephone Directory</h1>
+    <p class="help">Use the form below to add a contact. You can also search existing contacts.</p>
+
+    <section class="card">
+      <h2>Add Contact</h2>
+      <form id="addForm" method="post" action="/cgi-bin/directory.exe">
+        <input type="hidden" name="action" value="add">
+        <label>
+          Name
+          <input name="name" required>
+        </label>
+        <label>
+          Phone
+          <input name="phone" required>
+        </label>
+        <label>
+          Email
+          <input name="email" type="email">
+        </label>
+        <div class="row">
+          <button type="submit" class="primary">Add</button>
+          <button type="reset" class="alt">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <h2>Search Contacts</h2>
+      <form id="searchForm" method="get" action="/cgi-bin/directory.exe">
+        <input type="hidden" name="action" value="search">
+        <label>
+          Query (name / phone / email)
+          <input name="q" id="q" placeholder="Type to search...">
+        </label>
+        <div class="row">
+          <button type="submit">Search</button>
+          <button type="button" class="alt" id="showAllBtn">Show All</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

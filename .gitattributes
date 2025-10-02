@@ -1,0 +1,26 @@
+# Normalize text files and enforce consistent line endings
+* text=auto eol=lf
+
+# Explicitly mark text sources
+*.php text
+*.html text
+*.css text
+*.js  text
+*.md  text
+*.sql text
+
+# Binary (no diff)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.exe binary
+
+# CSV keep as text
+*.csv text eol=lf
+
+# Prevent linguist from counting vendor or backup copy
+art_gallery - Copy/ linguist-vendored

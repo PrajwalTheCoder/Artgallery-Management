@@ -1,0 +1,28 @@
+/* Base */
+:root { --bg:#eef2f7; --card:#fff; --text:#0f172a; --muted:#64748b; --primary:#5b6cff; --ring:rgba(17,24,39,.08)}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.45 Inter, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif}
+
+.container{max-width:1100px;margin:0 auto;padding:24px}
+
+/* Classic layout styles */
+:root{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+*{box-sizing:border-box}
+body{background:#f7fafc;color:#111;margin:0;padding:24px}
+.container{max-width:900px;margin:0 auto}
+h1{margin:0 0 12px;font-size:28px}
+.card{background:#fff;padding:16px;border-radius:8px;box-shadow:0 6px 18px rgba(10,10,20,0.06);margin-top:16px}
+label{display:block;margin:8px 0}
+input{width:100%;padding:10px;margin-top:6px;border:1px solid #e2e8f0;border-radius:8px}
+.row{display:flex;gap:8px;margin-top:12px}
+button{padding:10px 14px;border-radius:8px;border:0;background:#2563eb;color:#fff;cursor:pointer}
+button.alt{background:#94a3b8;color:#0f172a}
+button.primary{background:#2563eb;color:#fff}
+.help{font-size:14px;color:#475569}
+@media(min-width:700px){label{max-width:420px}}
+
+/* Optional table look if backend renders HTML */
+table{border-collapse:collapse;width:100%;margin-top:10px}
+th,td{border:1px solid #e5e7eb;padding:10px;text-align:left}
+th{background:#f1f5f9}

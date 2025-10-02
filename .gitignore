@@ -1,0 +1,49 @@
+# Core environment & secrets
+.env
+.env.local
+.env.*.local
+
+# OS noise
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE/editor
+.vscode/
+.idea/
+*.code-workspace
+
+# PHP / dependency managers
+/vendor/
+composer.lock
+
+# Logs & cache
+*.log
+logs/
+storage/
+cache/
+.tmp/
+
+# Uploads & generated media (keep folders, ignore files)
+art_gallery/assets/uploads/*
+!art_gallery/assets/uploads/.gitkeep
+ecommerce/images/uploads/*
+!ecommerce/images/uploads/.gitkeep
+
+# Node / frontend
+node_modules/
+.dist/
+.build/
+
+# Misc
+*.bak
+*.swp
+*.swo
+*.orig
+
+# Executables / binaries
+*.exe
+*.dll
+
+# Backup copy directory if not needed
+art_gallery - Copy/
