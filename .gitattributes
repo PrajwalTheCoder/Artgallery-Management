@@ -23,4 +23,5 @@
 *.csv text eol=lf
 
 # Prevent linguist from counting vendor or backup copy
-art_gallery - Copy/ linguist-vendored
+# Escape space or quote path so Git attributes parse; remove space variant directory.
+"art_gallery - Copy/" linguist-vendored
